@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>My profile page!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Renata's profile</title>
   </head>
 
-  <body>
+<body>
+  <div class="container">
 
-    <div class="container">
-      <div class="card">
-        <h1>Hello, I'm Renata !</h1>
-        <img src="images/renata.jpg" class="img-circle" width="200px" alt="Renata's picture!">
-        <p>Diving into technological world 🌍 </p>
+    <div class="card card-nav">
+      <div class="nav-links">
+        <i class="fas fa-heart"></i>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#footer">Follow me</a>
+        <i class="fas fa-heart"></i>
       </div>
-      <div class="card">
-        <p>Full Stack Web Developer</p>
-        <a href="#" class="btn-blue" target="_blank"> More about </a>
-      </div>
-
-      <div class="card">
-        <h2>Social Media</h2>
-        <ul class="list-inline">
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f icon"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fab fa-twitter icon"></i></a>
-          </li>
-        </ul>
-      </div>
-
     </div>
-  </body>
+
+    <div class="cards">
+      <div class="card main-card">
+        <h2>Hi! I'm Renata</h2>
+        <img src="css/images/renata-cute.jpg" class="avatar-large" alt="Renata's picture!">
+        <h3><br>Full Stack Web Developer</h3>
+      </div>
+      <div class="card">
+        <p class="main-text">I have been diving into this technological world after 7 years working as a flight attendant for big airline companies.
+          Challenging myself has been part of my life and this carrier change is one of the most important choices.
+          <br> I can describe myself as a person who has a pratical mind and sensitive heart.
+          I guess that’s why I’ve been enjoying so much this area - improving my mind skills daily and working as a team more easily.
+          An opportunity is everything I need to develop my web programmer skills and also sum up to a team as an exciting-learning person.</p>
+      </div>
+    </div>
+    <div class="album">
+        <div class="card card-photo"><img src="css/images/cats.jpg" alt="First photo" width="100"></div>
+        <div class="card card-photo">
+          <h2 id="about">About Me</h2>
+          <p>Renata Gabrielli Bresolin<br>From Veranópolis/RS<br>Living in São Paulo/SP
+            <br><br> 🇮🇹  Italian citizen <br> 🛫  Traveling <br>👪  Family <br>😺  Cats<br>📚  Books
+            <br>🍺  Beer<br> ☕  Coffee<br> 🍟  French Fries
+            </p>
+        </div>
+        <div class="card card-photo"><img src="css/images/renata-crazy.jpg" alt="Third photo" width="100"></div>
+    </div>
+
+    <div class="skill">
+      <div class="card code"><img src="css/images/renata-lewagon.jpg" alt="First photo" width="100"></div>
+      <div class="card code">
+        <h2 id="skill">Skills</h2>
+        <h4>Web Developer formed at Le Wagon Brazil</h4>
+        <ul>
+          <li>Ruby</li>
+          <li> Ruby on Rails</li>
+          <li>HTML, CSS and JavaScript</li>
+          <li>Software Architecture (MVC - Model View Control)</li>
+          <li>Relational Database, SQL & ORM (Active Record)</li>
+        </ul>
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+
+    <div class="card footer">
+      <div class="footer-copyright">
+        You can know more about me here:
+      </div>
+      <div class="footer-links" id="footer">
+        <a href="https://www.facebook.com/renata.g.bresolin/" target="_blank"><i class="fab fa-facebook-f icon"></i></a>
+        <a href="https://www.instagram.com/renatabresolin/" target="_blank"><i class="fab fa-instagram icon"></i></a>
+        <a href="https://www.linkedin.com/in/renata-gabrielli-bresolin-675382155/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+        <a href="https://github.com/renatabresolin"target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+  </div>
+</body>
 
 </html>

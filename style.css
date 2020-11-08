@@ -1,66 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Karla:wght@400;700&family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('components/avatar.css');
+@import url('components/buttom.css');
+@import url('components/footer.css');
+@import url('components/navbar.css');
+@import url('components/tabs.css');
+
 body {
-  background-color: #d5c9db;
-  font-family: 'Open Sans Condensed', sans-serif;
-  color: #6e7487;
-  font-size: 22px;
-  line-height: 1.5em;
-  text-align: center;
+  background-image: url('css/images/colorful.jpg');
 }
-
-h1 {
-  font-size: 30px;
-}
-
-h2{
-  font-size: 22px;
-  font-weight: 600;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: #6B72E1;
-  font-weight: 600;
-}
-
-a:hover {
-  background: #c9b3d3;
-}
-
-.btn-blue {
-  background-color: #6B72E1;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 4px;
-}
-
 .container {
-  margin: 20px;
-  padding: 50px;
-  display: block;
-}
-.card {
-  background: white;
-  margin: 20px 0px;
-  padding: 40px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  font-family: 'Karla', sans-serif;
+  color: #727272;
 }
 
-.img-circle {
-  border-radius: 60%;
+.main-card {
+  padding: 20px;
 }
 
-.list-inline {
-  list-style: none;
-  padding: 0 2px 0 0;
-}
-
-li {
-  display: inline-block;
-  padding: 10px;
-  margin: 10px;
+.main-card h2, h3 {
   text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 0px;
+}
+
+.container .card {
+  align-items: center;
+  margin: 20px;
+  padding: 15px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.album .card-photo img {
+  width: 100%;
+}
+.album .card-photo {
+  padding: 10px;
+}
+.album .card-photo p {
+  text-align: center;
+  font-size: 19px;
+}
+.album .card-photo h2 {
+  font-family: 'Indie Flower', cursive;
+}
+.skill {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.skill .code img {
+  width: 100%;
+}
+.skill .code {
+  padding: 10px;
+}
+.skill .code ul {
+  font-size: 20px;
+}
+.skill .code h4 {
+  padding-top: 5px;
+  font-size: 23px;
+}
+.skill .code h2 {
+  padding-top: 10px;
+  font-size: 32px;
+  font-family: 'Indie Flower', cursive;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .album {
+    grid-template-columns: 1fr;
+  }
+  .skill {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card .avatar-large {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.card .main-text {
+  font-size: 20px;
+  text-align: justify;
+}
+.card .card-nav {
+  padding: 10px;
+}
+
+.code .fa-heart {
+  padding-top: 6px;
+  color: #D23333;
+  font-size: 20px;
+  margin-top: 5px;
 }
